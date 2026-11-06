@@ -1,0 +1,26 @@
+MATHEX ARENA — INICIO RÁPIDO
+
+1. Para probar el juego sin instalar dependencias:
+   Abre la carpeta dist-site y ejecuta index.html con Chrome o cualquier navegador moderno.
+
+2. Para volver a generar la web estática después de editar el proyecto:
+   Requisito: Node.js 22.13 o superior.
+   En la carpeta del proyecto ejecuta:
+      npm run build:site
+   El resultado estará en dist-site/index.html.
+
+3. Para trabajar con la versión React/Vite:
+      npm install
+      npm run dev
+   Nota: la interfaz principal jugable de este respaldo es la versión estática de site/.
+
+4. El sonido se activa o desactiva desde el botón de la esquina superior derecha.
+
+5. Revisa ESTADO_DEL_PROYECTO.md para conocer las mejoras, verificaciones y tareas pendientes.
+
+6. En el modo versus, después de las dos respuestas aparece el duelo 2D pixel art.
+   Controles:
+   - Jugador 1: A/D mover, W saltar, F atacar, G impulso (recarga 1,2 s).
+   - Jugador 2: flechas mover, ↑ saltar, Enter atacar, Shift impulso (recarga 1,2 s).
+   - El primer impacto gana el duelo: +25 puntos y -10 de vida al rival.
+   - El duelo dura hasta 25 segundos; si no hay impacto, queda empatado.
